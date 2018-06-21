@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{53A9D0AB-8AF6-CDC0-E6FD-94F38D885A0F}</ProjectGuid>
+    <ProjectGuid>{CCA8D03B-7650-24A4-1C35-E5F17D6B688A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Carros.cs" />
+     <Compile Include="Assets\Scripts\CarsCreator.cs" />
      <Compile Include="Assets\Scripts\Fluxo.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
  <Reference Include="UnityEngine.UI">

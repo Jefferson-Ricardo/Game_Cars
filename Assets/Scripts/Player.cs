@@ -7,6 +7,8 @@ public class Player : MonoBehaviour {
 	private Rigidbody2D rb;
 	public float Speed = 4f;
 
+	public GameObject ExplosionObject;
+
 	void Start () {
 		rb = GetComponent<Rigidbody2D> ();
 	}
@@ -23,4 +25,17 @@ public class Player : MonoBehaviour {
 
 		rb.velocity = dir * Speed;
 	}
+
+	void OnCollisionEnter2D (Collision2D coll){
+		if (coll.gameObject.CompareTag ("Carros")) {
+			GameObject.Instantiate (ExplosionObject, this.transform.position, Quaternion.identity);
+			GameObject.Destroy (this.gameObject);
+		}
+	
+	
+	
+	
+	}
+
+
 }
